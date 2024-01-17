@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is an internal header file, you should not include this.
+//基于 poll(2) 的 IO multiplexing 后端
 
 #ifndef MUDUO_NET_POLLER_POLLPOLLER_H
 #define MUDUO_NET_POLLER_POLLPOLLER_H

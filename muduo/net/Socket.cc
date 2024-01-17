@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//封装 Sockets 描述符，负责关闭连接
 
 #include "muduo/net/Socket.h"
 

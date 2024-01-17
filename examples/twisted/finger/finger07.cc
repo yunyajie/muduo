@@ -2,7 +2,10 @@
 #include "muduo/net/TcpServer.h"
 
 #include <map>
-
+/*
+从空的UserMap里查找用户。 从一行消息中拿到用户名
+（L32），在UserMap里查找，然后返回结果。
+*/
 using namespace muduo;
 using namespace muduo::net;
 

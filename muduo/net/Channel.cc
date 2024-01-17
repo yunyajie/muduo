@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//用于每个 socket 连接的事件分发
 
 #include "muduo/base/Logging.h"
 #include "muduo/net/Channel.h"

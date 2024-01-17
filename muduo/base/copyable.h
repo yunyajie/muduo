@@ -1,3 +1,4 @@
+//一个空基类，用于标识（tag）值类型
 #ifndef MUDUO_BASE_COPYABLE_H
 #define MUDUO_BASE_COPYABLE_H
 

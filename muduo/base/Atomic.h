@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//原子操作与原子整数
 
 #ifndef MUDUO_BASE_ATOMIC_H
 #define MUDUO_BASE_ATOMIC_H

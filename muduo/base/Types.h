@@ -1,3 +1,4 @@
+//基本类型的声明，包括 muduo::string
 #ifndef MUDUO_BASE_TYPES_H
 #define MUDUO_BASE_TYPES_H
 

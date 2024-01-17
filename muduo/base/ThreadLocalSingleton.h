@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//每个线程一个 singleton
 
 #ifndef MUDUO_BASE_THREADLOCALSINGLETON_H
 #define MUDUO_BASE_THREADLOCALSINGLETON_H

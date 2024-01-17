@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//TCP 客户端
 
 #ifndef MUDUO_NET_TCPCLIENT_H
 #define MUDUO_NET_TCPCLIENT_H

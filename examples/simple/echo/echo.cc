@@ -12,7 +12,7 @@ using std::placeholders::_3;
 EchoServer::EchoServer(muduo::net::EventLoop* loop,
                        const muduo::net::InetAddress& listenAddr)
   : server_(loop, listenAddr, "EchoServer")
-{
+{//在构造函数里注册回调函数
   server_.setConnectionCallback(
       std::bind(&EchoServer::onConnection, this, _1));
   server_.setMessageCallback(
@@ -34,7 +34,7 @@ void EchoServer::onConnection(const muduo::net::TcpConnectionPtr& conn)
 void EchoServer::onMessage(const muduo::net::TcpConnectionPtr& conn,
                            muduo::net::Buffer* buf,
                            muduo::Timestamp time)
-{
+{//echo 业务逻辑：把收到的数据原封不动地发回客户端
   muduo::string msg(buf->retrieveAllAsString());
   LOG_INFO << conn->name() << " echo " << msg.size() << " bytes, "
            << "data received at " << time.toString();

@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//网络字节序与本机字节序的转换
 
 #ifndef MUDUO_NET_ENDIAN_H
 #define MUDUO_NET_ENDIAN_H

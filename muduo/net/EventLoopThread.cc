@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//新建一个专门用于 EventLoop 的线程
 
 #include "muduo/net/EventLoopThread.h"
 

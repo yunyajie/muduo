@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//线程对象
 
 #include "muduo/base/Thread.h"
 #include "muduo/base/CurrentThread.h"

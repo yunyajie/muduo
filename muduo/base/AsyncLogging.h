@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//异步日志 backend
 
 #ifndef MUDUO_BASE_ASYNCLOGGING_H
 #define MUDUO_BASE_ASYNCLOGGING_H

@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//事件分发器
 
 #ifndef MUDUO_NET_EVENTLOOP_H
 #define MUDUO_NET_EVENTLOOP_H

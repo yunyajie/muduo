@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//"倒计时门闩"同步
 
 #include "muduo/base/CountDownLatch.h"
 

@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//进程信息
 
 #include "muduo/base/ProcessInfo.h"
 #include "muduo/base/CurrentThread.h"

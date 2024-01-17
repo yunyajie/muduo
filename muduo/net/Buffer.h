@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//缓冲区，非阻塞 IO 必备
 
 #ifndef MUDUO_NET_BUFFER_H
 #define MUDUO_NET_BUFFER_H

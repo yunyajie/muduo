@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
-
+//数独求解服务器
 using namespace muduo;
 using namespace muduo::net;
 
@@ -45,16 +45,16 @@ class SudokuServer
   {
     LOG_DEBUG << conn->name();
     size_t len = buf->readableBytes();
-    while (len >= kCells + 2)
+    while (len >= kCells + 2) //反复读取数据，2 为回车换行字符
     {
       const char* crlf = buf->findCRLF();
       if (crlf)
-      {
-        string request(buf->peek(), crlf);
-        buf->retrieveUntil(crlf + 2);
+      {//如果找到了一条完整的请求
+        string request(buf->peek(), crlf);  //取出请求
+        buf->retrieveUntil(crlf + 2); //retrieve 已读取的数据
         len = buf->readableBytes();
         if (!processRequest(conn, request))
-        {
+        { //非法请求，断开连接
           conn->send("Bad Request!\r\n");
           conn->shutdown();
           break;
@@ -67,7 +67,7 @@ class SudokuServer
         break;
       }
       else
-      {
+      { //请求不完整，退出消息处理函数
         break;
       }
     }
@@ -80,7 +80,7 @@ class SudokuServer
     bool goodRequest = true;
 
     string::const_iterator colon = find(request.begin(), request.end(), ':');
-    if (colon != request.end())
+    if (colon != request.end()) //如果找到了 id 部分
     {
       id.assign(request.begin(), colon);
       puzzle.assign(colon+1, request.end());
@@ -90,10 +90,10 @@ class SudokuServer
       puzzle = request;
     }
 
-    if (puzzle.size() == implicit_cast<size_t>(kCells))
+    if (puzzle.size() == implicit_cast<size_t>(kCells)) //请求的长度合法
     {
       LOG_DEBUG << conn->name();
-      string result = solveSudoku(puzzle);
+      string result = solveSudoku(puzzle);  //求解数独，然后发回响应
       if (id.empty())
       {
         conn->send(result+"\r\n");

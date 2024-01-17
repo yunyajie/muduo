@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//封装底层的 Sockets API
 
 #include "muduo/net/SocketsOps.h"
 

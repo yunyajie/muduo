@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is an internal header file, you should not include this.
+//封装 Sockets 描述符，负责关闭连接
 
 #ifndef MUDUO_NET_SOCKET_H
 #define MUDUO_NET_SOCKET_H

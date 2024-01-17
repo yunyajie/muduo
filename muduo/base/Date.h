@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//Julian 日期库（即公历）
 
 #ifndef MUDUO_BASE_DATE_H
 #define MUDUO_BASE_DATE_H

@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//异步日志 backend
 
 #include "muduo/base/AsyncLogging.h"
 #include "muduo/base/LogFile.h"

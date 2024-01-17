@@ -5,7 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
-//
+//缓冲区，非阻塞 IO 必备
 
 #include "muduo/net/Buffer.h"
 

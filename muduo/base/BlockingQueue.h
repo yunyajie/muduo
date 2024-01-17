@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//无界阻塞队列（生产者消费者队列）
 
 #ifndef MUDUO_BASE_BLOCKINGQUEUE_H
 #define MUDUO_BASE_BLOCKINGQUEUE_H

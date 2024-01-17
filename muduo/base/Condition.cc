@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//条件变量，与 Mutex.h 一同使用
 
 #include "muduo/base/Condition.h"
 

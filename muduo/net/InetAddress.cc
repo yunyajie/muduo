@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//IP 地址的简单封装
 
 #include "muduo/net/InetAddress.h"
 

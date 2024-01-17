@@ -1,6 +1,6 @@
 #include "muduo/net/EventLoop.h"
 #include "muduo/net/TcpServer.h"
-
+//读取用户名、输出错误信息，然后断开连接。 如果读到一行以\r\n结尾的消息，就发送一条出错信息，然后断开连接。
 using namespace muduo;
 using namespace muduo::net;
 

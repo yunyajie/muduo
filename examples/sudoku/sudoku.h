@@ -6,7 +6,7 @@
 #include "muduo/base/StringPiece.h"
 
 muduo::string solveSudoku(const muduo::StringPiece& puzzle);
-const int kCells = 81;
+const int kCells = 81;  //81 个格子
 extern const char kNoSolution[];
 
 #endif  // MUDUO_EXAMPLES_SUDOKU_SUDOKU_H

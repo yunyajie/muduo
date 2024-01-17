@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//线程安全的 singleton
 
 #ifndef MUDUO_BASE_SINGLETON_H
 #define MUDUO_BASE_SINGLETON_H

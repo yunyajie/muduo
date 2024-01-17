@@ -36,6 +36,7 @@
 // pass in either a "const char*" or a "string".
 //
 // Arghh!  I wish C++ literals were automatically of type "string".
+//从 Google 开源代码借用的字符串参数传递类型
 
 #ifndef MUDUO_BASE_STRINGPIECE_H
 #define MUDUO_BASE_STRINGPIECE_H

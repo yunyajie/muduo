@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//简单的固定大小线程池
 
 #include "muduo/base/ThreadPool.h"
 

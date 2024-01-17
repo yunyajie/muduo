@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//简单的日志，可搭配 AsyncLogging 使用
 
 #ifndef MUDUO_BASE_LOGGING_H
 #define MUDUO_BASE_LOGGING_H

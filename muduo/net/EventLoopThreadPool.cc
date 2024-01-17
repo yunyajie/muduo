@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//muduo 默认多线程 IO 模型
 
 #include "muduo/net/EventLoopThreadPool.h"
 

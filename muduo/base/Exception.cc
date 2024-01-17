@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//带 stack trace 的异常基类
 
 #include "muduo/base/Exception.h"
 #include "muduo/base/CurrentThread.h"

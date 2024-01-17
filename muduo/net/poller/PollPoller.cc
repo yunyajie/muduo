@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//基于 poll(2) 的 IO multiplexing 后端
 
 #include "muduo/net/poller/PollPoller.h"
 

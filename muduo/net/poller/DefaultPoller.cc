@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//根据环境变量 MUDUO_USE_POLL 选择后端
 
 #include "muduo/net/Poller.h"
 #include "muduo/net/poller/PollPoller.h"

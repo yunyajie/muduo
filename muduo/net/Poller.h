@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is an internal header file, you should not include this.
+//IO multiplexing 的基类接口
 
 #ifndef MUDUO_NET_POLLER_H
 #define MUDUO_NET_POLLER_H

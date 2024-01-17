@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is an internal header file, you should not include this.
+//用于每个 socket 连接的事件分发
 
 #ifndef MUDUO_NET_CHANNEL_H
 #define MUDUO_NET_CHANNEL_H

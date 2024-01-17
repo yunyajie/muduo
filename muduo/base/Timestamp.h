@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//UTC 事件戳
 
 #ifndef MUDUO_BASE_TIMESTAMP_H
 #define MUDUO_BASE_TIMESTAMP_H

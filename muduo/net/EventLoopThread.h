@@ -7,6 +7,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//新建一个专门用于 EventLoop 的线程
 
 #ifndef MUDUO_NET_EVENTLOOPTHREAD_H
 #define MUDUO_NET_EVENTLOOPTHREAD_H

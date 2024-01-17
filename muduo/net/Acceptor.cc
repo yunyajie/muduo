@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//接受器，用于服务端接受连接
 
 #include "muduo/net/Acceptor.h"
 

@@ -4,6 +4,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 //
 // This is a public header file, it must only include public header files.
+//进程信息
 
 #ifndef MUDUO_BASE_PROCESSINFO_H
 #define MUDUO_BASE_PROCESSINFO_H

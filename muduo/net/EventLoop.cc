@@ -5,6 +5,7 @@
 // that can be found in the License file.
 
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//事件分发器
 
 #include "muduo/net/EventLoop.h"
 

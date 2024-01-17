@@ -2,6 +2,7 @@
 // that can be found in the License file.
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
+//互斥器
 
 #ifndef MUDUO_BASE_MUTEX_H
 #define MUDUO_BASE_MUTEX_H

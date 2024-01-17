@@ -1,3 +1,4 @@
+#一个简单的 pub/sub/hub 服务，演示应用级的广播
 hub - a server for broadcasting
 pubsub - a client library of hub
 pub - a command line tool for publishing content on a topic
