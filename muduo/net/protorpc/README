@@ -1,3 +1,4 @@
+#简单实现 Google Protobuf RPC, 作者不推荐使用
 This is an proof of concept implementation of Google Protobuf RPC using muduo.
 The object lifetime management is for from ideal and doesn't follow the usual
 muduo approach.
