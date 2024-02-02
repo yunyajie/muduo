@@ -43,8 +43,8 @@ namespace net
 class Buffer : public muduo::copyable
 {
  public:
-  static const size_t kCheapPrepend = 8;
-  static const size_t kInitialSize = 1024;
+  static const size_t kCheapPrepend = 8;    //prependable的初始大小
+  static const size_t kInitialSize = 1024;    //writable的初始大小
 
   explicit Buffer(size_t initialSize = kInitialSize)
     : buffer_(kCheapPrepend + initialSize),
@@ -72,7 +72,7 @@ class Buffer : public muduo::copyable
   size_t writableBytes() const
   { return buffer_.size() - writerIndex_; }
 
-  size_t prependableBytes() const
+  size_t prependableBytes() const   //前方可添加字节数
   { return readerIndex_; }
 
   const char* peek() const
@@ -175,7 +175,7 @@ class Buffer : public muduo::copyable
     return StringPiece(peek(), static_cast<int>(readableBytes()));
   }
 
-  void append(const StringPiece& str)
+  void append(const StringPiece& str) //后方添加
   {
     append(str.data(), str.size());
   }
@@ -326,7 +326,7 @@ class Buffer : public muduo::copyable
   ///
   /// Prepend int64_t using network endian
   ///
-  void prependInt64(int64_t x)
+  void prependInt64(int64_t x)  //前方添加一个64位的数
   {
     int64_t be64 = sockets::hostToNetwork64(x);
     prepend(&be64, sizeof be64);
@@ -352,7 +352,7 @@ class Buffer : public muduo::copyable
     prepend(&x, sizeof x);
   }
 
-  void prepend(const void* /*restrict*/ data, size_t len)
+  void prepend(const void* /*restrict*/ data, size_t len)   //向前方添加
   {
     assert(len <= prependableBytes());
     readerIndex_ -= len;

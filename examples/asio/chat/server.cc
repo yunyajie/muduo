@@ -18,12 +18,12 @@ class ChatServer : noncopyable
   ChatServer(EventLoop* loop,
              const InetAddress& listenAddr)
   : server_(loop, listenAddr, "ChatServer"),
-    codec_(std::bind(&ChatServer::onStringMessage, this, _1, _2, _3))
+    codec_(std::bind(&ChatServer::onStringMessage, this, _1, _2, _3)) //向 codec 注册 ChatServer::onStringMessage，即让它负责消息的解析后，然后把完整的消息回调给 Chatserver 群发
   {
     server_.setConnectionCallback(
         std::bind(&ChatServer::onConnection, this, _1));
     server_.setMessageCallback(
-        std::bind(&LengthHeaderCodec::onMessage, &codec_, _1, _2, _3));
+        std::bind(&LengthHeaderCodec::onMessage, &codec_, _1, _2, _3)); //将 LengthHeaderCodec::onMessage 注册给 ChatServer，即将到来的数据交给 codec 解析
   }
 
   void start()
@@ -51,7 +51,7 @@ class ChatServer : noncopyable
   void onStringMessage(const TcpConnectionPtr&,
                        const string& message,
                        Timestamp)
-  {
+  { //向所有连接发送收到的消息
     for (ConnectionList::iterator it = connections_.begin();
         it != connections_.end();
         ++it)
